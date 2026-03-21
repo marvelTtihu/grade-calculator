@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-color: #ebebeb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: fadeIn .8s .3s ease both;    
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.container-title {
+    margin-bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    color: #000000;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+}
+
+
+.cards-row {
+    display: flex;
+    gap: 50px;
+    align-items: flex-end;
+}
+
+.calculator-container {
+    width: 100%;
+    max-width: 320px;
+    border: 2px solid #000000;
+    padding: 20px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 0 5px 6px rgba(48, 48, 48, 0.2);
+    animation: fadeIn .8s .5s ease both; 
+} 
+
+.calculator-container p {
+    color: #000000;
+    font-family: 'Montserrat', sans-serif;
+    font-size: .92rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.calculator-container input {
+    border: 1px solid #000000;
+    border-radius: 6px;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #ebebeb;
+    box-shadow: 0 0 5px 6px rgba(48, 48, 48, 0.2);
+    text-decoration: none;
+}
+
+.calculator-container input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+#submitBtn {
+    padding: 8px 6px;
+    color: #ebebeb;
+    border: 1px solid #000000;
+    border-radius: 6px;
+    background-color: #000000;
+    transition: all .3s ease;
+    cursor: pointer;
+    box-shadow: 0 7px 6px -1px rgba(0, 0, 0, 0.5);
+}
+
+#submitBtn:hover {
+    transform: translateY(2px);
+}
+
+.grade-container {
+    width: 100%;
+    max-width: 500px;
+    border: 2px solid #000000;
+    padding: 20px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 25px;
+    box-shadow: 0 0 5px 6px rgba(48, 48, 48, 0.2);
+    animation: fadeIn .8s .7s ease both; 
+}
+
+.grade-container p {
+    color: #000000;
+    font-family: 'Montserrat', sans-serif;
+    font-size: .92rem;
+    text-align: justify;
+}
+
+.pass-grade {color: #3ab13a !important; font-weight: bold;}
+
+.fail-grade {color: rgb(211, 18, 18) !important; font-weight: bold; }
+
+@media (max-width: 768px) {
+    .cards-row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .calculator-container,
+    .grade-container {
+        max-width: 100%;
+        width: 100%;
+    }
+}

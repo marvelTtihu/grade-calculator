@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Grade Calculator</title>
+</head>
+<body>
+<div class="wrapper">
+    <h1 class="container-title">Grade Calculator</h1>
+    <div class="cards-row">
+        <!-- Grade Input -->
+        <div class="calculator-container">
+            <p>Enter your scores:</p>
+            <input type="number" id="math" placeholder="Math Score">
+            <input type="number" id="english" placeholder="English Score">
+            <input type="number" id="physics" placeholder="Physics Score">
+            <input type="number" id="chemistry" placeholder="Chemistry Score">
+            <input type="number" id="biology" placeholder="Biology Score">
+            <button id="submitBtn">Calculate</button>
+        </div>
+        <!-- Grade Output -->
+        <div class="grade-container">
+            <p id="average">Your average is: </p>
+            <p id="grade">Your grade is: </p>
+            <p>Your status is: <span id="status"></span></p>
+        </div>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
