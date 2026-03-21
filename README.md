@@ -13,7 +13,7 @@ A simple web-based grade calculator that helps students calculate their average 
 
 ## How to Use
 
-1. **Open the this link**: https://marvelttihu.github.io/grade-calculator/
+1. **Open the this link**: [here](https://marvelttihu.github.io/grade-calculator/)
 2. **Enter Scores**: Input your scores for each subject (0-100 range)
 3. **Calculate**: Click the "Calculate" button
 4. **View Results**: See your average, letter grade, and pass/fail status
