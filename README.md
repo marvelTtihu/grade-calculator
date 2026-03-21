@@ -49,3 +49,7 @@ A simple web-based grade calculator that helps students calculate their average 
 ## Browser Compatibility
 
 Works in all modern web browsers that support HTML5, CSS3, and ES6 JavaScript.
+
+## License
+
+This project is open source and available under the MIT License.
